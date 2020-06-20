@@ -13,7 +13,7 @@ with open(path) as csvfile:
     lowestProfit = 0
     loweestProfitMonth = ''
 
-    next(csvReader)
+    header = next(csvReader)
 
     for row in csvReader:
         totalMonths = totalMonths + 1

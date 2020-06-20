@@ -11,7 +11,7 @@ with open(path) as csvfile:
     winner = 'Error'
     winnerVotes = 0
 
-    next(csvReader)
+    header = next(csvReader)
 
     for row in csvReader:
         totalVotes = totalVotes + 1
