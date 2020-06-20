@@ -16,7 +16,6 @@ with open(path) as csvfile:
     next(csvReader)
 
     for row in csvReader:
-        print(f"Row 1 = {row[0]}, Row 2 = {row[1]}")
         totalMonths = totalMonths + 1
         netProfit = netProfit = row[1]
         if row[1] > str(greatestProfit):
